@@ -1,0 +1,7 @@
+.place__paragraph{
+    margin: 0;
+}
+
+.place__paragraph:nth-of-type(1){
+    margin-bottom: 26px;
+}
