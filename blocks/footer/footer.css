@@ -2,14 +2,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 48px;
+    margin: 0  48px 24px 48px;
     padding-top: 0;
+    max-width: 1184px;
+    box-sizing: border-box;
 }
+
+@media screen and (max-width:1024px) {
+    .footer {
+        max-width: 928px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer {
+        flex-direction: column;
+        margin-right: 16px;
+        margin-left: 16px;
+        max-width: 720px;
+        align-items: flex-start;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     .footer {
-        width: 58vw;
-        flex-direction: column;
+        max-width: 286px;
         align-items: flex-start;
         margin: 0 118px 24px 16px;
     }
